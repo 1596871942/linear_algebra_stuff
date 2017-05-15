@@ -72,7 +72,7 @@ var vm = {
     },
     isOrthogonal: function(v1,v2) {
 
-        if (this.dotProduct(v1,v2) < 0.00000000000000000001) {
+        if (Math.abs(this.dotProduct(v1,v2)) < 0.00000000000000000001) {
             return true;
         } else {
             return false;
